@@ -16,7 +16,7 @@ export default {
         xl: "24px",
       },
       colors: {
-        bgColor: "#171717",
+        bgColor: "#09090b",
         primaryColor: "#c2410c",
         secondaryColor: "#d6d3d1",
         tertiaryColor: "#f8fafc",

@@ -3,3 +3,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    smoothScrollBehavior: smooth;
+}
+
+.text-stroke {
+    -webkit-text-stroke: 1px #d6d3d1;
+    text-stroke: 1px #d6d3d1;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
