@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { FaAngleDoubleUp } from "react-icons/fa";
 import "./index.css";
 
 const Header = () => {
@@ -35,7 +36,7 @@ const Header = () => {
   }, [isDrawerOpen]);
 
   return (
-    <header id="header" className={"fixed top-0 flex flex-col w-screen z-40"}>
+    <header id="header" className={"sticky top-0 flex flex-col w-screen z-40"}>
       <div
         className={
           "flex flex-row items-center justify-between px-4 py-2 bg-bgColor z-40"
@@ -66,8 +67,57 @@ const Header = () => {
       </div>
       <div
         id="drawer"
-        className={`absolute flex flex-col h-screen w-screen bg-bgColor z-30`}
-      ></div>
+        className={`absolute flex flex-col h-screen w-screen justify-center items-center gap-4 bg-bgColor z-30`}
+      >
+        <div
+          className={
+            "absolute bottom-0 flex flex-col w-1.2 h-4 items-center justify-center p-4 border-b-4"
+          }
+        >
+          <p className={"text-secondaryColor"}>
+            <FaAngleDoubleUp />
+          </p>
+        </div>
+        <p
+          className={
+            "font-montserrat font-semibold text-md text-secondaryColor tracking-widest opacity-60"
+          }
+        >
+          MENU
+        </p>
+        <a
+          href=""
+          className={
+            "font-montserrat font-bold text-4xl text-secondaryColor hover:bg-secondaryColor hover:text-bgColor transition duration-150"
+          }
+        >
+          HOME
+        </a>{" "}
+        <a
+          href=""
+          className={
+            "font-montserrat font-bold text-4xl text-secondaryColor hover:bg-secondaryColor hover:text-bgColor transition duration-150"
+          }
+        >
+          PROJECTS
+        </a>{" "}
+        <a
+          href=""
+          className={
+            "font-montserrat font-bold text-4xl text-secondaryColor hover:bg-secondaryColor hover:text-bgColor transition duration-150"
+          }
+        >
+          ABOUT
+        </a>{" "}
+        <a
+          href=""
+          className={
+            "font-montserrat font-bold text-4xl text-secondaryColor hover:bg-secondaryColor hover:text-bgColor transition duration-150"
+          }
+        >
+          CONTACT
+        </a>
+      </div>
     </header>
   );
 };

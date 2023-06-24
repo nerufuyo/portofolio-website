@@ -1,0 +1,41 @@
+#hiText {
+    animation: hiTextOpacity 1s ease-in-out 12s forwards, hiTextSize 1s ease-in-out 13s forwards;
+}
+
+#descriptionText {
+    animation: descriptionTextSize 1s ease-in-out 13.15s forwards;
+}
+
+#descriptionButton {
+    animation: descriptionButtonSize .15s ease-in-out 14.5s forwards 10;
+}
+
+@keyframes hiTextOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hiTextSize {
+    100% {
+        font-size: 3rem;
+    }
+}
+
+@keyframes descriptionTextSize {
+    100% {
+        font-size: 1.5rem;
+    }
+}
+
+@keyframes descriptionButtonSize {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

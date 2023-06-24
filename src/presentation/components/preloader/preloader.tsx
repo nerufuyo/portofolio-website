@@ -5,7 +5,7 @@ const Preloader = () => {
     <div
       id="preloader"
       className={
-        "flex flex-col items-center justify-center w-[100vw] h-[100vh] bg-bgColor overflow-hidden"
+        "flex flex-col items-center justify-center w-[100vw] h-[100vh] bg-bgColor overflow-hidden z-[60]"
       }
     >
       <div

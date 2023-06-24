@@ -1,22 +1,27 @@
+import { motion, useScroll, useTransform } from "framer-motion";
+
 import "./content.css";
 
 const Project = () => {
+  const { scrollYProgress } = useScroll();
+  const x = useTransform(scrollYProgress, [0.75, 0], [0, 400]);
+
   return (
     <section
       className={
         "flex flex-col relative h-screen items-center justify-center p-4 overflow-hidden"
       }
     >
-      <div
+      <motion.div
         className={
-          "absolute top-[-3rem] flex flex-row w-screen gap-1 overflow-hidden"
+          "absolute top-[-3rem] flex flex-row w-fit gap-1 overflow-hidden"
         }
+        style={{ x }}
       >
-        <p className={"font-montserrat font-bold text-8xl text-bgColor"}>ART</p>
-        <p className={"font-montserrat font-bold text-8xl text-bgColor"}>ART</p>
-        <p className={"font-montserrat font-bold text-8xl text-bgColor"}>ART</p>
-        <p className={"font-montserrat font-bold text-8xl text-bgColor"}>ART</p>
-      </div>
+        <p className={"font-montserrat font-bold text-8xl text-bgColor"}>
+          NERUFUYO
+        </p>
+      </motion.div>
       <div className={"flex flex-col w-screen px-4 items-start justify-start"}>
         <h1 className={"font-montserrat font-bold text-4xl"}>PROJECTS</h1>
       </div>
