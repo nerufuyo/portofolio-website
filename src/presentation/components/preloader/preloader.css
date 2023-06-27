@@ -1,0 +1,219 @@
+.stop-scrolling {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-: hidden;
+}
+
+#preloaderMainText {
+    opacity: 0;
+    animation: fadeIn .15s ease-in-out 2s forwards 2, moveLeft 1s ease-in-out 4.5s forwards, displayNone .25s ease-in-out 10.5s forwards;
+}
+
+#preloaderSubText1 {
+    opacity: 0;
+    animation: fadeIn .15s ease-in-out 2.25s forwards 2, moveRight 1s ease-in-out 4.5s forwards, displayNone .25s ease-in-out 10.5s forwards;
+}
+
+#preloaderSubText2 {
+    opacity: 0;
+    animation: fadeIn .15s ease-in-out 2.5s forwards 2, moveLeft 1s ease-in-out 4.5s forwards, displayNone .25s ease-in-out 10.5s forwards;
+}
+
+#preloaderSubText3 {
+    opacity: 0;
+    animation: fadeIn .15s ease-in-out 2.75s forwards 2, moveRight 1s ease-in-out 4.5s forwards, displayNone .25s ease-in-out 10.5s forwards;
+}
+
+#preloaderSubText4 {
+    opacity: 0;
+    animation: fadeIn .15s ease-in-out 3s forwards 2, moveLeft 1s ease-in-out 4.5s forwards, displayNone .25s ease-in-out 10.5s forwards;
+}
+
+#preloaderSubText5 {
+    opacity: 0;
+    animation: fadeIn .15s ease-in-out 3.25s forwards 2, moveRight 1s ease-in-out 4.5s forwards, displayNone .25s ease-in-out 10.5s forwards;
+}
+
+#preloaderSubText6 {
+    opacity: 0;
+    animation: fadeIn .15s ease-in-out 3.5s forwards 2, moveLeft 1s ease-in-out 4.5s forwards, displayNone .25s ease-in-out 10.5s forwards;
+}
+
+#preloaderSubText7 {
+    opacity: 0;
+    animation: fadeIn .15s ease-in-out 3.75s forwards 2, moveRight 1s ease-in-out 4.5s forwards, displayNone .25s ease-in-out 10.5s forwards;
+}
+
+#slideLeft {
+    animation: slideUp .5s ease-in-out 5.5s forwards, slideMoveLeft 3s ease-in-out 7s forwards, displayNone .25s ease-in-out 10.5s forwards;
+}
+
+#slideRight {
+    animation: slideUp .5s ease-in-out 5.5s forwards, slideMoveRight 3s ease-in-out 7s forwards, displayNone .25s ease-in-out 10.5s forwards;
+}
+
+#haloText {
+    animation: widthIn 1s ease-in-out 7s forwards, fadeOut 1s ease-in-out 10s forwards, displayNone .25s ease-in-out 10.5s forwards;
+}
+
+#preloader {
+    animation: widthOut 1s ease-in-out 10s forwards, displayNone 0s ease-in-out 12s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+       margin-left: 0;
+    }
+
+    100% {
+        margin-left: -100rem;
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: 100rem;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 10rem;
+    }
+}
+
+@keyframes slideMoveRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100rem);
+    }
+}
+
+@keyframes slideMoveLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100rem);
+    }
+}
+
+@keyframes widthIn {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes widthOut {
+    0% {
+        height: 100vh;
+    }
+
+    100% {
+        height: 0;
+    }
+}
+
+
+@keyframes displayNone {
+    0% {
+       display: flex;
+    }
+
+    100% {
+        display: none;
+        transform: translateY(-100vh);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #slideLeft {
+        animation: slideUp .5s ease-in-out 5.5s forwards, slideMoveLeft 1.75s ease-in-out 7s forwards, displayNone .25s ease-in-out 10.5s forwards;
+    }
+
+    #slideRight {
+        animation: slideUp .5s ease-in-out 5.5s forwards, slideMoveRight 1.75s ease-in-out 7s forwards, displayNone .25s ease-in-out 10.5s forwards;
+    }
+
+    @keyframes slideUp {
+        0% {
+            height: 0;
+        }
+
+        100% {
+            height: 14rem;
+        }
+    }
+
+    @keyframes displayNone {
+        0% {
+        display: flex;
+        }
+
+        100% {
+            display: none;
+            transform: translateY(-100vh);
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    @keyframes moveLeft {
+        0% {
+        margin-left: 0;
+        }
+
+        100% {
+            margin-left: -200rem;
+        }
+    }
+
+    @keyframes moveRight {
+        0% {
+            margin-left: 0;
+        }
+
+        100% {
+            margin-left: 200rem;
+        }
+    }
+}

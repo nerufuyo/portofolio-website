@@ -1,0 +1,43 @@
+.rotateLine1 {
+    transform: rotate(45deg) translate(4px, 2px);
+    transition: all 0.25s ease-in-out;
+}
+
+.rotateLine2 {
+    transform: rotate(-45deg) translate(3px, -1px);
+    transition: all 0.25s ease-in-out;
+}
+
+.backRotateLine1 {
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: all 0.25s ease-in-out;
+}
+
+.backRotateLine2 {
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: all 0.25s ease-in-out;
+}
+
+.drawerHeightClose {
+  transform: translateY(-200vh);
+  transition: all 0.5s ease-in-out;
+}
+
+.drawerHeightShow {
+  transform: translateY(0px);
+  transition: all .5s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+  .rotateLine1 {
+      transform: rotate(45deg) translate(5px, 3px);
+      transition: all 0.25s ease-in-out;
+  }
+
+  .rotateLine2 {
+      transform: rotate(-45deg) translate(5px, -4px);
+      transition: all 0.25s ease-in-out;
+  }
+}
+
+
