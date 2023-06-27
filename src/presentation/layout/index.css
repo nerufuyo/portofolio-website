@@ -28,4 +28,16 @@
   transition: all .5s ease-in-out;
 }
 
+@media only screen and (min-width: 768px) {
+  .rotateLine1 {
+      transform: rotate(45deg) translate(5px, 3px);
+      transition: all 0.25s ease-in-out;
+  }
+
+  .rotateLine2 {
+      transform: rotate(-45deg) translate(5px, -4px);
+      transition: all 0.25s ease-in-out;
+  }
+}
+
 

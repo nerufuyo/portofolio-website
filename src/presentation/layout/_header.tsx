@@ -39,12 +39,12 @@ const Header = () => {
     <header id="header" className={"sticky top-0 flex flex-col w-screen z-40"}>
       <div
         className={
-          "flex flex-row items-center justify-between px-4 py-2 bg-bgColor z-40"
+          "flex flex-row items-center justify-between px-4 py-2 bg-bgColor z-40 sm:px-6 sm:py-4 md:px-8 lg:px-12 lg:py-6 xl:px-16"
         }
       >
         <h1
           className={
-            "font-montserrat font-semibold text-lg tracking-widest  text-secondaryColor"
+            "font-montserrat font-semibold text-lg tracking-widest  text-secondaryColor sm:text-xl md:text-2xl lg:text-3xl"
           }
         >
           LISTYO ADI
@@ -57,11 +57,11 @@ const Header = () => {
         >
           <div
             id="menuLine1"
-            className={`w-6 h-1 rounded-full bg-secondaryColor hover:bg-white`}
+            className={`w-6 h-1 rounded-full bg-secondaryColor hover:bg-white md:w-11 md:h-2`}
           ></div>
           <div
             id="menuLine2"
-            className={`w-6 h-1 rounded-full bg-secondaryColor hover:bg-white`}
+            className={`w-6 h-1 rounded-full bg-secondaryColor hover:bg-white md:w-11 md:h-2`}
           ></div>
         </div>
       </div>
@@ -71,16 +71,16 @@ const Header = () => {
       >
         <div
           className={
-            "absolute bottom-0 flex flex-col w-1.2 h-4 items-center justify-center p-4 border-b-4"
+            "absolute bottom-0 flex flex-col w-1/4 h-4 items-center justify-center p-4 border-b-4"
           }
         >
-          <p className={"text-secondaryColor"}>
+          <p className={"text-secondaryColor md:text-4xl"}>
             <FaAngleDoubleUp />
           </p>
         </div>
         <p
           className={
-            "font-montserrat font-semibold text-md text-secondaryColor tracking-widest opacity-60"
+            "font-montserrat font-semibold text-md text-secondaryColor tracking-widest opacity-60 md:text-2xl"
           }
         >
           MENU
@@ -88,7 +88,7 @@ const Header = () => {
         <a
           href=""
           className={
-            "font-montserrat font-bold text-4xl text-secondaryColor hover:bg-secondaryColor hover:text-bgColor transition duration-150"
+            "font-montserrat font-bold text-4xl text-secondaryColor hover:bg-secondaryColor hover:text-bgColor transition duration-150 md:text-6xl"
           }
         >
           HOME
@@ -96,7 +96,7 @@ const Header = () => {
         <a
           href=""
           className={
-            "font-montserrat font-bold text-4xl text-secondaryColor hover:bg-secondaryColor hover:text-bgColor transition duration-150"
+            "font-montserrat font-bold text-4xl text-secondaryColor hover:bg-secondaryColor hover:text-bgColor transition duration-150 md:text-6xl"
           }
         >
           PROJECTS
@@ -104,7 +104,7 @@ const Header = () => {
         <a
           href=""
           className={
-            "font-montserrat font-bold text-4xl text-secondaryColor hover:bg-secondaryColor hover:text-bgColor transition duration-150"
+            "font-montserrat font-bold text-4xl text-secondaryColor hover:bg-secondaryColor hover:text-bgColor transition duration-150 md:text-6xl"
           }
         >
           ABOUT
@@ -112,7 +112,7 @@ const Header = () => {
         <a
           href=""
           className={
-            "font-montserrat font-bold text-4xl text-secondaryColor hover:bg-secondaryColor hover:text-bgColor transition duration-150"
+            "font-montserrat font-bold text-4xl text-secondaryColor hover:bg-secondaryColor hover:text-bgColor transition duration-150 md:text-6xl"
           }
         >
           CONTACT

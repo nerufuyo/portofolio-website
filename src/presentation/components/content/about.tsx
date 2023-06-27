@@ -10,15 +10,21 @@ const About = () => {
   return (
     <section
       className={
-        "flex flex-col w-screen h-screen items-start justify-center px-4 gap-10 bg-bgColor"
+        "flex flex-col w-screen h-screen items-start justify-center px-4 gap-10 bg-bgColor sm:px-6 md:px-8 md:gap-16 lg:px-12 xl:px-16"
       }
     >
-      <h1 className={"font-montserrat font-bold text-4xl text-secondaryColor"}>
+      <h1
+        className={
+          "font-montserrat font-bold text-4xl text-secondaryColor md:text-7xl"
+        }
+      >
         About Me
       </h1>
       <div className={"flex flex-col gap-2"}>
         <p
-          className={"font-montserrat text-lg text-secondaryColor text-justify"}
+          className={
+            "font-montserrat text-lg text-secondaryColor text-justify md:text-2xl"
+          }
         >
           Hello again, I'm{" "}
           <span className={"text-primaryColor"}>Listyo Adi Pamungkas</span>. I'm
@@ -27,7 +33,9 @@ const About = () => {
           <span className={"text-primaryColor"}>Dart</span>.
         </p>
         <p
-          className={"font-montserrat text-lg text-secondaryColor text-justify"}
+          className={
+            "font-montserrat text-lg text-secondaryColor text-justify md:text-2xl"
+          }
         >
           As you can see, I have created many projects using this language. I
           also learned many other things like{" "}
@@ -43,19 +51,19 @@ const About = () => {
           "flex flex-row flex-wrap w-full items-center justify-center gap-2"
         }
       >
-        <p className={"text-6xl text-secondaryColor"}>
+        <p className={"text-6xl text-secondaryColor md:text-7xl"}>
           <DiDart />
         </p>
-        <p className={"text-6xl text-secondaryColor"}>
+        <p className={"text-6xl text-secondaryColor md:text-7xl"}>
           <DiReact />
         </p>
-        <p className={"text-6xl text-secondaryColor"}>
+        <p className={"text-6xl text-secondaryColor md:text-7xl"}>
           <DiJavascript />
         </p>
-        <p className={"text-6xl text-secondaryColor"}>
+        <p className={"text-6xl text-secondaryColor md:text-7xl"}>
           <DiFirebase />
         </p>
-        <p className={"text-6xl text-secondaryColor"}>
+        <p className={"text-6xl text-secondaryColor md:text-7xl"}>
           <DiMysql />
         </p>
       </div>

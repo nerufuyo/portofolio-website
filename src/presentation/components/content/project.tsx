@@ -22,10 +22,16 @@ const Project = () => {
           NERUFUYO
         </p>
       </motion.div>
-      <div className={"flex flex-col w-screen px-4 items-start justify-start"}>
-        <h1 className={"font-montserrat font-bold text-4xl"}>PROJECTS</h1>
+      <div
+        className={
+          "flex flex-col w-screen px-4 items-start justify-start sm:px-6 lg:px-11 xl:px-14"
+        }
+      >
+        <h1 className={"font-montserrat font-bold text-4xl md:text-7xl"}>
+          PROJECTS
+        </h1>
       </div>
-      <div className="grid grid-cols-3 gap-1 w-screen h-1/2 px-4">
+      <div className="grid grid-cols-3 gap-1 w-screen h-1/2 px-4 sm:px-7 md:px-8 lg:px-12 xl:px-16">
         <div className="bg-primaryColor p-2">01</div>
         <div className="bg-primaryColor p-2">02</div>
         <div className="row-span-2 bg-primaryColor p-2">03</div>
